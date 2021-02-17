@@ -19,8 +19,5 @@ public class LaserScript : MonoBehaviour
         transform.Translate(direction * movespeed * Time.deltaTime);
     }
 
-    public void SetDirection(Vector3 newDirection)
-    {
-        direction = newDirection;
-    }
+    
 }

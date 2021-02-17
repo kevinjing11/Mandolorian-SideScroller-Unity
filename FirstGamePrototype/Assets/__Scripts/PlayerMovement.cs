@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
         {
             GameObject firedProjectile = Instantiate(projectile) as GameObject;
             firedProjectile.transform.position = transform.position;
-            firedProjectile.GetComponent<LaserScript>().SetDirection(Vector3.Normalize(Input.mousePosition));
         }
     }
 
