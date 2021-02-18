@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public float runSpeed = 40f;
-    public GameObject projectile;
+    public GameObject weapon;
 
     private bool jump = false;
     private bool crouch = false;
@@ -34,8 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject firedProjectile = Instantiate(projectile) as GameObject;
-            firedProjectile.transform.position = transform.position;
+            weapon.GetComponent<OneClickRangedWeapon>().Attack();
         }
     }
 

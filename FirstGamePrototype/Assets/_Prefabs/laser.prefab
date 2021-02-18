@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2097298091488334030}
   - component: {fileID: 2097298091488334031}
-  - component: {fileID: 2097298091488334064}
+  - component: {fileID: 6757332362038676387}
+  - component: {fileID: 544575061460960170}
   m_Layer: 0
   m_Name: laser
   m_TagString: Untagged
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2097298091488334064
+--- !u!114 &6757332362038676387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,4 +95,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c31540885f41a459d192928963e95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 100
+--- !u!50 &544575061460960170
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097298091488334065}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
