@@ -9,7 +9,6 @@ public class Laser : MonoBehaviour
     {
         timeAlive += Time.deltaTime;
 
-        Debug.Log(timeAlive);
 
         if (timeAlive > 5)
             Destroy(gameObject);
