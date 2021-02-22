@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+FirstGamePrototype/Assets/pixel art/Characters/_Mando/Jump/Juno 1 32x22.png.meta
+*.meta
+FirstGamePrototype/Assets/pixel art/Characters/_Mando/Idle/Idle 1.png.meta
+FirstGamePrototype/Assets/pixel art/Characters/_Mando/Idle/Idle 1.png.meta
+*.meta
