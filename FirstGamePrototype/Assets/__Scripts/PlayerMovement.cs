@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            weapon.GetComponent<OneClickRangedWeapon>().Attack();
+            weapon.GetComponent<WeaponAttack>().Attack();
         }
     }
 

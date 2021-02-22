@@ -67,11 +67,11 @@
     <Compile Include="Assets\__Scripts\BabyYodaMovement.cs" />
     <Compile Include="Assets\__Scripts\CameraController.cs" />
     <Compile Include="Assets\__Scripts\CharacterController2D.cs" />
-    <Compile Include="Assets\__Scripts\Laser.cs" />
     <Compile Include="Assets\__Scripts\OneClickRangedWeapon.cs" />
     <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\__Scripts\RangedWeapon.cs" />
+    <Compile Include="Assets\__Scripts\TimeKill.cs" />
     <Compile Include="Assets\__Scripts\Weapon.cs" />
+    <Compile Include="Assets\__Scripts\WeaponAttack.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
