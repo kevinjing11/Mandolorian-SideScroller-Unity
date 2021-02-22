@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OneClickRangedWeapon : MonoBehaviour, RangedWeapon, Weapon
+public class OneClickRangedWeapon : Weapon
 {
     public GameObject projectile;
     public float projectileSpeed;
 
-    public void FireProjectile()
+    override public void Attack()
     {
         GameObject firedProjectile = Instantiate(projectile);
-        firedProjectile.transform.position = transform.position;
+        firedProjectile.transform.position = firePoint.transform.position;
 
 
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        float rotation = Mathf.Rad2Deg * Mathf.Atan((mousePosition.y - transform.position.y) / (mousePosition.x - transform.position.x));
+        float rotation = Mathf.Rad2Deg * Mathf.Atan((mousePosition.y - firePoint.transform.position.y) / (mousePosition.x - firePoint.transform.position.x));
 
         //for roation over 90 degrees
         if (rotation < 0)
@@ -23,11 +23,8 @@ public class OneClickRangedWeapon : MonoBehaviour, RangedWeapon, Weapon
 
         firedProjectile.transform.Rotate(0, 0, rotation);
 
-        firedProjectile.GetComponent<Rigidbody2D>().velocity = (mousePosition - transform.position).normalized * projectileSpeed;
+        firedProjectile.GetComponent<Rigidbody2D>().velocity = (mousePosition - firePoint.transform.position).normalized * projectileSpeed;
     }
 
-    public void Attack()
-    {
-        FireProjectile();
-    }
+    
 }
