@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Weapon
+public abstract class Weapon : MonoBehaviour
 {
-
+    public GameObject firePoint;
     //all weapons should be a child of the player object
-    void Attack();
+    public abstract void Attack();
 }
