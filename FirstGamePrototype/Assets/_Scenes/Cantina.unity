@@ -1036,7 +1036,7 @@ PrefabInstance:
     - target: {fileID: 156824603112699490, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: amplitude
-      value: 0.005
+      value: 0.0025
       objectReference: {fileID: 0}
     - target: {fileID: 6777276680390758981, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
@@ -1121,7 +1121,7 @@ PrefabInstance:
     - target: {fileID: 6777276680667856856, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: runSpeed
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6777276680667856861, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
