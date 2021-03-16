@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
+    public Animator animator;
     public float runSpeed = 40f;
     public GameObject weapon;
 
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetButtonDown("Crouch"))
@@ -36,6 +38,15 @@ public class PlayerMovement : MonoBehaviour
         {
             weapon.GetComponent<WeaponAttack>().Attack();
         }
+
+       
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+    }
+
+    public void OnLanding() //Needed for jump transitions
+    {
+        animator.SetBool("IsJumping", false);
     }
 
     void FixedUpdate()

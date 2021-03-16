@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: def7f37e7ae318943ab62e094e85aa15
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -520694333473714323
+    second: Mando_Sprite_45
+  - first:
+      213: 5213097796268250862
+    second: Mando_Sprite_47
+  - first:
+      213: -5218978309972428437
+    second: Mando_Sprite_48
+  - first:
+      213: -8108062555531208262
+    second: Mando_Sprite_49
+  - first:
+      213: 740169764579614761
+    second: Mando_Sprite_50
+  - first:
+      213: -5767209584288050391
+    second: Mando_Sprite_52
+  - first:
+      213: 4701638999461535499
+    second: Mando_Sprite_53
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -42,10 +63,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 0
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 7
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,8 +115,8 @@ TextureImporter:
         y: 320
         width: 21
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6312655, y: 0.6786664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -115,8 +136,8 @@ TextureImporter:
         y: 320
         width: 26
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7120445, y: 0.6786664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,8 +157,8 @@ TextureImporter:
         y: 320
         width: 28
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7297145, y: 0.665905}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,9 +178,9 @@ TextureImporter:
         y: 320
         width: 25
         height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 9
+      pivot: {x: 0.68377167, y: 0.6960229}
+      border: {x: 0, y: 0, z: 0, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -237,7 +258,7 @@ TextureImporter:
       name: _mando_run_3
       rect:
         serializedVersion: 2
-        x: 62
+        x: 61
         y: 282
         width: 24
         height: 23
@@ -322,9 +343,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 183
-        y: 280
+        y: 266
         width: 56
-        height: 38
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,7 +384,7 @@ TextureImporter:
       name: _mando_blaster_fire_1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 47
         y: 252
         width: 42
         height: 24
@@ -489,7 +510,7 @@ TextureImporter:
       name: _mando_flame_3
       rect:
         serializedVersion: 2
-        x: 54
+        x: 52
         y: 224
         width: 16
         height: 16
@@ -994,9 +1015,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 33
-        y: 54
-        width: 3
-        height: 8
+        y: 52
+        width: 9
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1015,9 +1036,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 43
-        y: 49
+        y: 58
         width: 5
-        height: 17
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,10 +1077,10 @@ TextureImporter:
       name: _mando_bomb_+
       rect:
         serializedVersion: 2
-        x: 70
-        y: 11
-        width: 35
-        height: 34
+        x: 84
+        y: 31
+        width: 7
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1078,9 +1099,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 11
-        width: 25
-        height: 25
+        y: 24
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,10 +1119,10 @@ TextureImporter:
       name: _mando_blaster_beam_1
       rect:
         serializedVersion: 2
-        x: 186
-        y: 262
-        width: 26
-        height: 11
+        x: 192
+        y: 227
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1124,7 +1145,7 @@ TextureImporter:
         width: 28
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1145,7 +1166,7 @@ TextureImporter:
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1153,6 +1174,153 @@ TextureImporter:
       bones: []
       spriteID: 6cd0e8ff19b88f840800000000000000
       internalID: 5258106024129072582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 49
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f8db0334f16c8f0800000000000000
+      internalID: -520694333473714323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 24
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6d0f553d4a85840800000000000000
+      internalID: 5213097796268250862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_48
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 24
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69ff9fd0e67297b0800000000000000
+      internalID: -5218978309972428437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_49
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 11
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab99ae860106a7f80800000000000000
+      internalID: -8108062555531208262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_50
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 24
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920a043ba7c954a00800000000000000
+      internalID: 740169764579614761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_52
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 11
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92358476071c6ffa0800000000000000
+      internalID: -5767209584288050391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mando_Sprite_53
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 11
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f170972c39f3140800000000000000
+      internalID: 4701638999461535499
       vertices: []
       indices: 
       edges: []
