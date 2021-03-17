@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\__Scripts\ArmRotator.cs" />
     <Compile Include="Assets\__Scripts\BabyYodaMovement.cs" />
     <Compile Include="Assets\__Scripts\CameraController.cs" />
     <Compile Include="Assets\__Scripts\CharacterController2D.cs" />
