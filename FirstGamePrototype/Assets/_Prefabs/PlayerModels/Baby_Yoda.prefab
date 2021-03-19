@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7526670090651458271}
   - component: {fileID: 7526670090651458268}
   m_Layer: 0
-  m_Name: Baby_Yoda
+  m_Name: baby yoda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,5 +94,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3ad4ce317986a4f81ea8ba89633dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.001
+  amplitude: 0.01
   frequency: 1

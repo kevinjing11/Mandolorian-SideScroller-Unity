@@ -64,12 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\__Scripts\ArmRotator.cs" />
     <Compile Include="Assets\__Scripts\BabyYodaMovement.cs" />
     <Compile Include="Assets\__Scripts\CameraController.cs" />
     <Compile Include="Assets\__Scripts\CharacterController2D.cs" />
-    <Compile Include="Assets\__Scripts\Hero.cs" />
     <Compile Include="Assets\__Scripts\OneClickRangedWeapon.cs" />
+    <Compile Include="Assets\__Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\__Scripts\TextCrawler.cs" />
     <Compile Include="Assets\__Scripts\TimeKill.cs" />
     <Compile Include="Assets\__Scripts\Weapon.cs" />
     <Compile Include="Assets\__Scripts\WeaponAttack.cs" />

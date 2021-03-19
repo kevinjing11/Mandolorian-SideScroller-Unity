@@ -48,7 +48,7 @@ MonoBehaviour:
   firePoint: {fileID: 4969551789426394801}
   projectile: {fileID: 2097298091488334065, guid: 72e0a2ee377ce914a9f4dcd861523344,
     type: 3}
-  projectileSpeed: 50
+  projectileSpeed: 100
 --- !u!114 &-1058272228347841550
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -73,16 +73,6 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 
-		//make player face mouse
-		var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		if (mousePosition.x > transform.position.x)
-		{
-			if (!m_FacingRight)
-				Flip();
-		}
-		else if (m_FacingRight)
-			Flip();
-
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
