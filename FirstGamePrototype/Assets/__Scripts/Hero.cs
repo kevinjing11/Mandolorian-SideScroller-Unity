@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hero : MonoBehaviour
 {
     public CharacterController2D controller;
+    public Animator animator; //Define animator object to be used for animations
     public float runSpeed = 40f;
     public GameObject weapon;
 
@@ -19,14 +20,18 @@ public class Hero : MonoBehaviour
         if (S == null) S = this;
     }
 
+  
     // Update is called once per frame
     void Update()
     {
        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetButtonDown("Crouch"))
@@ -42,6 +47,7 @@ public class Hero : MonoBehaviour
         {
             weapon.GetComponent<WeaponAttack>().Attack();
         }
+        
     }
 
     void FixedUpdate()
@@ -50,4 +56,11 @@ public class Hero : MonoBehaviour
         controller.Move(horizontalMove, crouch, jump);
         jump = false;
     }
+
+    public void OnLanding() //public component to be fed into animator for jump control
+    {
+      
+            animator.SetBool("IsJumping", false); 
+    }
+
 }
