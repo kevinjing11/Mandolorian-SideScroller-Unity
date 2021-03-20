@@ -16,7 +16,7 @@ TagManager:
   - 
   - Background
   - Foreground
-  - 
+  - Invisable Blocks
   - 
   - 
   - 
@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Invisable Blocks
+    uniqueID: 1014988381
+    locked: 0
   - name: Background
     uniqueID: 1447763269
     locked: 0
