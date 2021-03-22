@@ -15,9 +15,17 @@ public class Hero : MonoBehaviour
     private bool crouch = false;
     private float horizontalMove = 0f;
 
+    public int maxHealth = 20;
+    public int currentHealth; //Elements for healthbar
+
+    public HealthBar healthBar;
+
     private void Start()
     {
         if (S == null) S = this;
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
   
@@ -46,10 +54,16 @@ public class Hero : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             weapon.GetComponent<WeaponAttack>().Attack();
+            TakeDamage(1); //Delete later, for testing healthbar
         }
         
     }
 
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
     void FixedUpdate()
     {
         //Move our character
@@ -63,4 +77,11 @@ public class Hero : MonoBehaviour
             animator.SetBool("IsJumping", false); 
     }
 
+    void LateUpdate() //Code to constantly check if player is dead
+    {
+        if (currentHealth <= 0)
+        {
+            DestroyObject(gameObject);
+        }
+    }
 }
