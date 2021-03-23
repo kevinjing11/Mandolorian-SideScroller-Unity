@@ -7,6 +7,10 @@ public class DeathBarrier : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("Cantina");
+        if(other.tag == "Hero"){
+            SceneManager.LoadScene("Cantina");
+        } else {
+            Destroy(other.gameObject);
+        }
     }
 }

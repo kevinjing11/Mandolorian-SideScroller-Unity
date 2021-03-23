@@ -38,7 +38,10 @@ public class Enemy : MonoBehaviour
         EnemyMove();
     }
 
+
+
     void OnTriggerEnter2D(Collider2D other) {
+        //boundary controller
         if(isWalkingLeft) {
             isWalkingLeft = false;
         } else {
@@ -58,6 +61,7 @@ public class Enemy : MonoBehaviour
 		// And then smoothing it out and applying it to the character
 		e_Rigidbody2D.velocity = Vector3.SmoothDamp(e_Rigidbody2D.velocity, targetVelocity, ref e_Velocity, 0.05f);
 
+        
 		// If the input is moving the player right and the player is facing left...
 		if (move > 0 && isWalkingLeft)
 			{

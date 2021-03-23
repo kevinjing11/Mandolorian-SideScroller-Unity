@@ -1,6 +1,5 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-<<<<<<< HEAD
 Cmd: preprocess
   insize=708 outsize=708 ok=1
 Cmd: preprocess
@@ -9,5 +8,3 @@ Cmd: preprocess
   insize=2706 outsize=487 ok=1
 Cmd: preprocess
   insize=2309 outsize=864 ok=1
-=======
->>>>>>> origin/keeganTestingBranch
