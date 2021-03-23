@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Cantina.unity
-    guid: 1bac82cb066917846bc10e8b9628d1af
+    path: Assets/_Scenes/Menus/Start Menu.unity
+    guid: 9567714baf74bb440ac618b416540986
   - enabled: 1
-    path: Assets/_Scenes/Test.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/_Scenes/Levels/Desert_1.unity
+    guid: dda59e92ea7dae646bb21b5225353ae7
   m_configObjects: {}
