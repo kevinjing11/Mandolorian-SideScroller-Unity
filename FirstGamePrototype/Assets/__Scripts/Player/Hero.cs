@@ -84,4 +84,14 @@ public class Hero : MonoBehaviour
             DestroyObject(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Enemy")
+        {
+            //need to add damage sometime
+            currentHealth--;
+            healthBar.SetHealth(currentHealth);
+        }
+    }
 }

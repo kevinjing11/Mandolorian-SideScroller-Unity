@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":5.064517498016357,"y":0.18804772198200227,"z":407.4842834472656},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":5.051126956939697,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":5.324741840362549,"y":-1.8095303773880005,"z":745.12890625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":9.490202903747559,"orthographic":true}
+>>>>>>> origin/keeganTestingBranch
