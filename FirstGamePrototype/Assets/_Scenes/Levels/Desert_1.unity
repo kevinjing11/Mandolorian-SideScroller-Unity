@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 265878212}
   - component: {fileID: 265878211}
   - component: {fileID: 265878210}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Tilemap_EnemyBounds
   m_TagString: EnemyBounds
   m_Icon: {fileID: 0}
@@ -14957,6 +14957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070429996091431238, guid: 6354eeed0f6b58b41862e3a5fe03a68a,
+        type: 3}
+      propertyPath: maxHealth
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5070429996091431244, guid: 6354eeed0f6b58b41862e3a5fe03a68a,
         type: 3}

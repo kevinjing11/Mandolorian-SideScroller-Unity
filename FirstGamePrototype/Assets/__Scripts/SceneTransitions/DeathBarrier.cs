@@ -7,9 +7,7 @@ public class DeathBarrier : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Projectile") {
-            //do nothing
-        } else {
+        if(other.tag == "Player") {
             SceneManager.LoadScene("Cantina");
         }
     }

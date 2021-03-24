@@ -54,13 +54,15 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
         //boundary controller
-        if(isWalkingLeft) {
-            isWalkingLeft = false;
-        } else {
-            isWalkingLeft = true;
-        }
-        if(other.tag == "Projectile") {
-            TakeDamage(1);
+        if(other.tag == "EnemyBounds") {
+            if(isWalkingLeft) {
+                isWalkingLeft = false;
+            } else {
+                isWalkingLeft = true;
+            }
+            if(other.tag == "Projectile") {
+                TakeDamage(1);
+            }
         }
     }
   
