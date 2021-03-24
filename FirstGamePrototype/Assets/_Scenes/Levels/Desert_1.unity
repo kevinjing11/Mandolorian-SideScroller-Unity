@@ -287,7 +287,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.004999995, y: 0.004999995, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -785,7 +785,7 @@ TilemapRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1440,7 +1440,7 @@ TilemapRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -11134,7 +11134,7 @@ TilemapRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -11743,7 +11743,7 @@ TilemapRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.34931505, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.120000005, y: 0.055000007, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -12286,7 +12286,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58fe1faf59e46648a22201b935ad516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameIsPaused: 0
+  player: {fileID: 1752023452120008118}
   pauseMenuUI: {fileID: 1264472506}
+  missileLauncher: {fileID: 8166202762003028877, guid: f268c290880c1cc44a2216a003d62799,
+    type: 3}
+  laserGun: {fileID: 439669582299513863, guid: a09dd4ed05127b44b9f30105f6831a4b, type: 3}
+  spear: {fileID: 0}
 --- !u!1001 &1537601605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12740,7 +12746,7 @@ TilemapRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -13965,7 +13971,7 @@ TilemapRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -14299,6 +14305,11 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5070429996091431238, guid: 6354eeed0f6b58b41862e3a5fe03a68a,
+        type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1516912270}
     - target: {fileID: 5070429996091431244, guid: 6354eeed0f6b58b41862e3a5fe03a68a,
         type: 3}
       propertyPath: m_RootOrder
@@ -14382,6 +14393,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ee5072acb01e7b42a74baefd2c758b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1752023452120008118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5070429996091431238, guid: 6354eeed0f6b58b41862e3a5fe03a68a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1752023452120008115}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752023452120008116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e67f9c4779cacc4f9f18a35e440f3fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4600422285871453605

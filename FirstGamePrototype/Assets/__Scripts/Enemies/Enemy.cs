@@ -10,9 +10,6 @@ public class Enemy : MonoBehaviour
     public int damage;
     public HealthBar healthBar;
     public bool isWalkingLeft = true;
-    
-    //the hero needs to be the target for the enemies
-    public Hero target;
 
     private Rigidbody2D e_Rigidbody2D;
     private Vector3 e_Velocity = Vector3.zero;

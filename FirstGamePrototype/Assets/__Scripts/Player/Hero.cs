@@ -20,6 +20,8 @@ public class Hero : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public PauseMenu pauseMenu;
+
     private void Start()
     {
         if (S == null) S = this;
@@ -32,37 +34,31 @@ public class Hero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if(!pauseMenu.GameIsPaused) {
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            animator.SetBool("IsJumping", true);
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+
+            if (Input.GetButtonDown("Crouch"))
+            {
+                crouch = true;
+            }
+            else if (Input.GetButtonUp("Crouch"))
+            {
+                crouch = false;
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                weapon.GetComponent<WeaponAttack>().Attack();
+            }
         }
-
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Crouch"))
-        {
-            crouch = false;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            weapon.GetComponent<WeaponAttack>().Attack();
-        }
-
-       
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            SceneManager.LoadScene("WeaponMenu");
-        }
-        
-
     }
 
     void TakeDamage(int damage)
