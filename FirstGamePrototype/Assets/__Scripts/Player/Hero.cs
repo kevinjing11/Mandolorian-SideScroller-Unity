@@ -55,7 +55,14 @@ public class Hero : MonoBehaviour
         {
             weapon.GetComponent<WeaponAttack>().Attack();
         }
+
+       
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene("WeaponMenu");
+        }
         
+
     }
 
     void TakeDamage(int damage)

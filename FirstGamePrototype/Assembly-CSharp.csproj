@@ -74,6 +74,7 @@
     <Compile Include="Assets\__Scripts\SceneTransitions\DeathBarrier.cs" />
     <Compile Include="Assets\__Scripts\SceneTransitions\EndOfLevel.cs" />
     <Compile Include="Assets\__Scripts\SceneTransitions\MainMenu.cs" />
+    <Compile Include="Assets\__Scripts\SceneTransitions\PauseMenu.cs" />
     <Compile Include="Assets\__Scripts\SceneTransitions\TextCrawler.cs" />
     <Compile Include="Assets\__Scripts\Weapons\OneClickRangedWeapon.cs" />
     <Compile Include="Assets\__Scripts\Weapons\TimeKill.cs" />
