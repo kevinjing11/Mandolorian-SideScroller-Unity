@@ -55,8 +55,13 @@ public class Enemy : MonoBehaviour
        Debug.Log("hit the bounds");
        isWalkingLeft = !isWalkingLeft;
 
-        if(other.tag == "Projectile")
+        if(other.tag == "Laser")
         {
+            TakeDamage(1);
+            Destroy(other);
+        }
+
+        if(other.tag == "Missile") {
             TakeDamage(1);
         }
         
