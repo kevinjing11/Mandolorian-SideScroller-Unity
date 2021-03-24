@@ -6,7 +6,7 @@ public class OneClickRangedWeapon : Weapon
 {
     public GameObject projectile;
     public float projectileSpeed;
-
+    public GameObject firePoint;
     override public void Attack()
     {
         GameObject firedProjectile = Instantiate(projectile);
