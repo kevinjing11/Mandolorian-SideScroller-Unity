@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -80,17 +80,17 @@ public class Hero : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "EnemyAttack")
+        if(collision.tag == "Enemy")
         {
-            //need to add damage sometime
-            //public damage variable from enemy
-            currentHealth--;
+            GameObject collidingEnemy = collision.gameObject;
+            Enemy enemy = collidingEnemy.GetComponent<Enemy>();
+            currentHealth = currentHealth - enemy.damage;
             healthBar.SetHealth(currentHealth);
         }
     }

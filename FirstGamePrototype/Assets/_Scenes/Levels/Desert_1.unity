@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 265878212}
   - component: {fileID: 265878211}
   - component: {fileID: 265878210}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tilemap_EnemyBounds
   m_TagString: EnemyBounds
   m_Icon: {fileID: 0}
