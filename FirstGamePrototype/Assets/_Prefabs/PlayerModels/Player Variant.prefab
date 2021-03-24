@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 110692224}
   - component: {fileID: 110692225}
   - component: {fileID: 110692226}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,10 +173,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 110692224}
     m_Modifications:
+    - target: {fileID: 3275060210424088207, guid: f268c290880c1cc44a2216a003d62799,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8166202762003028877, guid: f268c290880c1cc44a2216a003d62799,
         type: 3}
       propertyPath: m_Name
       value: MissileLauncher
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166202762003028877, guid: f268c290880c1cc44a2216a003d62799,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8166202762003028879, guid: f268c290880c1cc44a2216a003d62799,
         type: 3}
@@ -274,6 +284,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 156824603112699503, guid: 35cae374e88d56d49b667ede94704d71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777276680390758970, guid: 35cae374e88d56d49b667ede94704d71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6777276680390758981, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,6 +303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777276680477523528, guid: 35cae374e88d56d49b667ede94704d71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6777276680477523531, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
@@ -364,6 +389,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6777276680667856851, guid: 35cae374e88d56d49b667ede94704d71,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6777276680667856856, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: weapon
@@ -422,12 +452,12 @@ PrefabInstance:
     - target: {fileID: 6777276680667856857, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.21
+      value: 0.84
       objectReference: {fileID: 0}
     - target: {fileID: 6777276680667856857, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.24
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 6777276680667856861, guid: 35cae374e88d56d49b667ede94704d71,
         type: 3}
@@ -634,6 +664,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4935911207724868783, guid: 00f4b69376d066c4eb13b75c7b915312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935911208143113132, guid: 00f4b69376d066c4eb13b75c7b915312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4935911208143113135, guid: 00f4b69376d066c4eb13b75c7b915312,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -668,6 +708,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.47612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935911208904631825, guid: 00f4b69376d066c4eb13b75c7b915312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935911209577315719, guid: 00f4b69376d066c4eb13b75c7b915312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4935911209609279528, guid: 00f4b69376d066c4eb13b75c7b915312,
         type: 3}
@@ -748,6 +798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: gradient.m_NumColorKeys
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935911209609279534, guid: 00f4b69376d066c4eb13b75c7b915312,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f4b69376d066c4eb13b75c7b915312, type: 3}

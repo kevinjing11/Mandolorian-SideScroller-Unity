@@ -54,24 +54,27 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
         //boundary controller
-        if(other.tag == "EnemyBounds") {
-            if(isWalkingLeft) {
-                isWalkingLeft = false;
-            } else {
-                isWalkingLeft = true;
-            }
-            if(other.tag == "Projectile") {
-                TakeDamage(1);
-            }
+       
+       Debug.Log("hit the bounds");
+       isWalkingLeft = !isWalkingLeft;
+
+        if(other.tag == "Projectile")
+        {
+            TakeDamage(1);
         }
+        
+
+        
     }
   
 
     void EnemyMove() {
         float move = 0f;
+ 
         if(isWalkingLeft) {
             move = -1*walkSpeed;
         } else {
+            
             move = walkSpeed;
         }
 		// Move the character by finding the target velocity

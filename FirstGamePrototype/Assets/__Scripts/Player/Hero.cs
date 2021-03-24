@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Hero : MonoBehaviour
 {
     public CharacterController2D controller;
@@ -80,7 +80,7 @@ public class Hero : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("Cantina");
         }
     }
 
