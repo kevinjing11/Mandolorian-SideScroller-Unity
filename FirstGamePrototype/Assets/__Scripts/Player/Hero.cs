@@ -54,7 +54,6 @@ public class Hero : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             weapon.GetComponent<WeaponAttack>().Attack();
-            TakeDamage(1); //Delete later, for testing healthbar
         }
         
     }
@@ -87,9 +86,10 @@ public class Hero : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        if(collision.tag == "EnemyAttack")
         {
             //need to add damage sometime
+            //public damage variable from enemy
             currentHealth--;
             healthBar.SetHealth(currentHealth);
         }

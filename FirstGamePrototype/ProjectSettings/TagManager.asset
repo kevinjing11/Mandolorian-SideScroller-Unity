@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
+  - Enemy
+  - Projectile
+  - EnemyBounds
   layers:
   - Default
   - TransparentFX
@@ -17,10 +20,10 @@ TagManager:
   - Background
   - Foreground
   - Invisable Blocks
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Laser
+  - EnemyAttack
   - 
   - 
   - 
