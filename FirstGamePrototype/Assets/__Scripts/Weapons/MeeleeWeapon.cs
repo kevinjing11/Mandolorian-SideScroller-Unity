@@ -7,8 +7,6 @@ public class MeeleeWeapon : Weapon
     public GameObject damagePoint;
 
     private Vector3 path = Vector3.zero;
-    private float attackSpeed = 1f;
-    private int direction = 1;
     private Vector3 distanceFromPlayer;
     
     public override void Attack()
@@ -17,14 +15,14 @@ public class MeeleeWeapon : Weapon
         path = mousePosition - transform.position;
         distanceFromPlayer = transform.position - Hero.S.transform.position;
         moveOut();
-        //Invoke("changeDirection", 1);
+       
         Invoke("moveBack", 1);
     }
 
     private void moveOut()
     {
-        //direction = direction * -1;
-        transform.position = transform.position + path.normalized * 1f;
+        
+        transform.position = transform.position + path.normalized * 1.5f;
     }
 
     private void moveBack()
@@ -32,9 +30,4 @@ public class MeeleeWeapon : Weapon
         transform.position = Hero.S.transform.position + distanceFromPlayer;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        //transform.position = transform.position + (direction * path * attackSpeed * Time.deltaTime);
-    }
 }
