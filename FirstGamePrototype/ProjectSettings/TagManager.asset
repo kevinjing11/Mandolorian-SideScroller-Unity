@@ -9,6 +9,8 @@ TagManager:
   - Projectile
   - EnemyBounds
   - EnemyAttack
+  - Grenade
+  - Laser
   layers:
   - Default
   - TransparentFX

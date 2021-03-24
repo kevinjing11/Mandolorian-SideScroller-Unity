@@ -249,7 +249,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2effe2333dfa4684bafb64a28939925e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.7025046, b: 0.096920624, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -335,11 +335,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  walkSpeed: 2
+  walkSpeed: 1.5
   damage: 3
   healthBar: {fileID: 6081441146430981231}
   isWalkingLeft: 0
-  target: {fileID: 0}
 --- !u!1 &6081441146113942163
 GameObject:
   m_ObjectHideFlags: 0

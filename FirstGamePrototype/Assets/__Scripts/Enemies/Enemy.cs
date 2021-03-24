@@ -50,17 +50,17 @@ public class Enemy : MonoBehaviour
 
 
     void OnTriggerEnter2D(Collider2D other) {
-        //boundary controller
-       
-       Debug.Log("hit the bounds");
+
        isWalkingLeft = !isWalkingLeft;
 
-        if(other.tag == "Projectile")
+        if(other.tag == "Laser")
         {
+            TakeDamage(2);
+            Destroy(other);
+        }
+        if(other.tag == "Grenade") {
             TakeDamage(1);
         }
-        
-
         
     }
   
