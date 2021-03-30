@@ -7,6 +7,8 @@ public class WeaponAttack : MonoBehaviour
     public Weapon weapon;
     public void Attack()
     {
+        
         weapon.Attack();
+        
     }
 }

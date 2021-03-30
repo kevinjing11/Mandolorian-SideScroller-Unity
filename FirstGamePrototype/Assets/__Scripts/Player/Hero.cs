@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Hero : MonoBehaviour
@@ -21,6 +23,8 @@ public class Hero : MonoBehaviour
     public HealthBar healthBar;
 
     public PauseMenu pauseMenu;
+    
+    private bool noWeapon = false;
 
     private void Start()
     {
@@ -35,16 +39,21 @@ public class Hero : MonoBehaviour
     void Update()
     {
         if(!pauseMenu.GameIsPaused) {
-            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            GetInput();
+        }
+    }
 
-            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+    private void GetInput()
+    {
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-            if (Input.GetButtonDown("Jump"))
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+        if (Input.GetButtonDown("Jump"))
             {
                 jump = true;
                 animator.SetBool("IsJumping", true);
             }
-
             if (Input.GetButtonDown("Crouch"))
             {
                 crouch = true;
@@ -54,12 +63,13 @@ public class Hero : MonoBehaviour
                 crouch = false;
             }
 
-            if (Input.GetMouseButtonDown(0))
+      
+        if (Input.GetMouseButtonDown(0))
             {
                 weapon.GetComponent<WeaponAttack>().Attack();
             }
-        }
     }
+
 
     void TakeDamage(int damage)
     {
