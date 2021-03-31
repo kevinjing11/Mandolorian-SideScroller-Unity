@@ -11,6 +11,7 @@ TagManager:
   - EnemyAttack
   - Missile
   - Laser
+  - TitleCamera
   layers:
   - Default
   - TransparentFX
