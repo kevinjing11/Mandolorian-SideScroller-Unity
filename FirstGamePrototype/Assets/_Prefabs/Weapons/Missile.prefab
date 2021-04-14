@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1603883840737236761}
   - component: {fileID: 1603883840737236762}
   - component: {fileID: 7039918278114082371}
-  - component: {fileID: 5445135203821871108}
+  - component: {fileID: -9067518164047349868}
   m_Layer: 13
   m_Name: Missile
   m_TagString: Missile
@@ -101,7 +101,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 6200000, guid: 8d6b94b030473964b8131e71cb2e3639, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -115,14 +115,14 @@ CircleCollider2D:
   m_GameObject: {fileID: 1603883840737236763}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8d6b94b030473964b8131e71cb2e3639, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.053057194, y: 0.01396507}
   serializedVersion: 2
   m_Radius: 0.13635874
---- !u!114 &5445135203821871108
+--- !u!114 &-9067518164047349868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,9 +131,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603883840737236763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaeafc2b874d6c439ab1a3e8f963512, type: 3}
+  m_Script: {fileID: 11500000, guid: c3091b5a4a86d9b4e8ead807e2befa55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 2
+  damage: 10
+  knockBack: 20
+  attackerTag: 
+  maxTime: 3
   explosionSprite: {fileID: -8492664589239049117, guid: 2ce6399bd3249e1418e823ed16c20f4f,
     type: 3}

@@ -7,7 +7,7 @@ public class PseudoWeapon : Weapon
 
     int i = 0;
     // Start is called before the first frame update
-    public override void Attack()
+    public override void Attack(GameObject target)
     {
         i++;
     }

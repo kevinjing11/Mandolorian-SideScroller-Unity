@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject spear;
 
     private GameObject currentWeapon;
+   
 
     void Awake() {
         pauseMenuUI.SetActive(false);
         GameIsPaused = false;
+      
     }
     
 
@@ -28,6 +31,7 @@ public class PauseMenu : MonoBehaviour
             if (GameIsPaused)
             {
                 Resume();
+                
             }
             else
             {
@@ -38,6 +42,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        player.SavePlayer();
         pauseMenuUI.SetActive(false);
         //time scale is between 0 - 1, with 0 being paused
         Time.timeScale = 1f;
@@ -53,39 +58,25 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadLaser()
     {
-        StoreWeapon();
-        EquipWeapon(laserGun);
+        
+        player.EquipWeapon(laserGun);
     }
 
     public void LoadGrenade()
     {
-        StoreWeapon();
-        EquipWeapon(missileLauncher);
+        
+        player.EquipWeapon(missileLauncher);
     }
 
     public void LoadSpear()
     {
-        StoreWeapon();
-        EquipWeapon(spear);
+        
+        player.EquipWeapon(spear);
     }
 
-    private void StoreWeapon()
-    {
-        GameObject mando = player.gameObject;
-        GameObject hand = mando.transform.GetChild(3).gameObject;
-        GameObject weapon = hand.transform.GetChild(0).gameObject;
-        Destroy(weapon);
-    }
 
-    private void EquipWeapon(GameObject go)
+    public void ExitGame()
     {
-        GameObject mando = player.gameObject;
-        GameObject hand = mando.transform.GetChild(3).gameObject;
-        currentWeapon = Instantiate(go);
-        currentWeapon.transform.parent = hand.transform;
-        Hero hero = mando.GetComponent<Hero>();
-        hero.weapon = currentWeapon;
-        hero.weapon.transform.position = hand.transform.position;
-        hero.weapon.transform.rotation = hand.transform.rotation;
+        Application.Quit();
     }
 }

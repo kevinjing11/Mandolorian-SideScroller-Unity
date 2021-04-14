@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class DeathBarrier : MonoBehaviour
 {
+    public string nextScene = "Cantina";
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player") {
-            SceneManager.LoadScene("Cantina");
+            Hero s = other.GetComponent<Hero>();
+            s.SavePlayer();
+            SceneManager.LoadScene(nextScene);
         }
     }
 }

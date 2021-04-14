@@ -40,7 +40,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8166202762003028879}
   - component: {fileID: 8166202762003028876}
-  - component: {fileID: 540248840364603411}
   - component: {fileID: -3068238976972310632}
   - component: {fileID: 7333454009509467273}
   m_Layer: 0
@@ -59,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 8166202762003028877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.81, y: 2.81, z: 1}
   m_Children:
   - {fileID: 536617295249683730}
   m_Father: {fileID: 0}
@@ -77,23 +76,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5497df1480c69454f8fd4b1ae48b6076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 1603883840737236763, guid: 1ab80b02af18aa44cafb1164a7a8a3e6,
+  fireRate: 3
+  attackSpeed: 35
+  projectile: {fileID: 1603883840737236763, guid: 8fb0553f3d335214bafcc4abd9ed143e,
     type: 3}
-  projectileSpeed: 40
   firePoint: {fileID: 3275060210424088207}
---- !u!114 &540248840364603411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8166202762003028877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1f3b6426c7e364bb81bdf85d721cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 8166202762003028876}
 --- !u!212 &-3068238976972310632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -139,7 +126,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.19, y: 0.06}
+  m_Size: {x: 0.76, y: 0.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -157,3 +144,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8260069506907e4a9786e530710ab23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointer: {fileID: 0}
+  point: 1

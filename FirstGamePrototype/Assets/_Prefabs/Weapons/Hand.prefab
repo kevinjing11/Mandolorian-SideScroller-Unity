@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3394893407041829685}
   - component: {fileID: 3394893407041829642}
-  - component: {fileID: 8867446058720620462}
-  - component: {fileID: 124036580950448899}
+  - component: {fileID: 7617577807482173931}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -84,20 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8867446058720620462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3394893407041829684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1f3b6426c7e364bb81bdf85d721cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 124036580950448899}
---- !u!114 &124036580950448899
+--- !u!114 &7617577807482173931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,3 +95,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13c3fd40352b0b43badaa0b10309d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: 0.5
+  attackSpeed: 0

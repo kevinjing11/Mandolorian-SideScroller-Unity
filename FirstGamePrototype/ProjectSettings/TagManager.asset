@@ -12,6 +12,10 @@ TagManager:
   - Missile
   - Laser
   - TitleCamera
+  - Coin
+  - Bitcoin
+  - HeartPack
+  - Yoda
   layers:
   - Default
   - TransparentFX
@@ -51,6 +55,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1447763269
+    locked: 0
+  - name: Background Blocks
+    uniqueID: 1866157783
     locked: 0
   - name: Default
     uniqueID: 0

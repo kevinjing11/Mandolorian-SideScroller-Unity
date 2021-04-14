@@ -5,9 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class EndOfLevel : MonoBehaviour
 {
-   void OnTriggerEnter2D(Collider2D other)
+
+    //put the Level Loader object here
+    public GameObject levelLoader;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        //maybe add player progression here
-        SceneManager.LoadScene("Cantina");
+        if(other.tag == "Player")
+        {
+            //increase player level
+            other.GetComponent<Hero>().IncreaseLevel();
+            //save the player data
+            other.GetComponent<Hero>().SavePlayer();
+            //load the Cantina Scene
+            levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Cantina");
+        }
+       
     }
 }
