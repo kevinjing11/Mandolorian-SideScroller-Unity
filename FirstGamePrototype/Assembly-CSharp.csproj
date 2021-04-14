@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E6B118B0-8ED6-6F64-4544-AA5FBDBF8FE8}</ProjectGuid>
+    <ProjectGuid>{241279FC-C126-A078-3985-40D92420CD14}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\__Scripts\CameraController.cs" />
     <Compile Include="Assets\__Scripts\Characters\ArmRotator.cs" />
     <Compile Include="Assets\__Scripts\Characters\BabyYoda.cs" />
     <Compile Include="Assets\__Scripts\Characters\BabyYodaMovement.cs" />
@@ -75,6 +76,12 @@
     <Compile Include="Assets\__Scripts\Characters\Hero.cs" />
     <Compile Include="Assets\__Scripts\Characters\Vader.cs" />
     <Compile Include="Assets\__Scripts\ClampText.cs" />
+    <Compile Include="Assets\__Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\__Scripts\HealthBar.cs" />
+    <Compile Include="Assets\__Scripts\Player\ArmRotator.cs" />
+    <Compile Include="Assets\__Scripts\Player\BabyYodaMovement.cs" />
+    <Compile Include="Assets\__Scripts\Player\CharacterController2D.cs" />
+    <Compile Include="Assets\__Scripts\Player\Hero.cs" />
     <Compile Include="Assets\__Scripts\Save_Load\PlayerData.cs" />
     <Compile Include="Assets\__Scripts\Save_Load\SaveSystem.cs" />
     <Compile Include="Assets\__Scripts\Save_Load\ShopData.cs" />
@@ -83,6 +90,7 @@
     <Compile Include="Assets\__Scripts\SceneTransitions\LevelLoader.cs" />
     <Compile Include="Assets\__Scripts\SceneTransitions\MainMenu.cs" />
     <Compile Include="Assets\__Scripts\SceneTransitions\PauseMenu.cs" />
+    <Compile Include="Assets\__Scripts\SceneTransitions\TextCrawler.cs" />
     <Compile Include="Assets\__Scripts\ShopButtons.cs" />
     <Compile Include="Assets\__Scripts\SimpleTrigger.cs" />
     <Compile Include="Assets\__Scripts\TextScripts\Dialogue.cs" />
@@ -90,11 +98,14 @@
     <Compile Include="Assets\__Scripts\TextScripts\TextCrawler.cs" />
     <Compile Include="Assets\__Scripts\TriggerZoneLevelSelection.cs" />
     <Compile Include="Assets\__Scripts\Weapons\Bomb.cs" />
+    <Compile Include="Assets\__Scripts\Weapons\MeeleeWeapon.cs" />
     <Compile Include="Assets\__Scripts\Weapons\OneClickRangedWeapon.cs" />
     <Compile Include="Assets\__Scripts\Weapons\PainPoint.cs" />
     <Compile Include="Assets\__Scripts\Weapons\Projectile.cs" />
     <Compile Include="Assets\__Scripts\Weapons\PseudoWeapon.cs" />
     <Compile Include="Assets\__Scripts\Weapons\Spear.cs" />
+    <Compile Include="Assets\__Scripts\Weapons\TimeKill.cs" />
+    <Compile Include="Assets\__Scripts\Weapons\TimedExplode.cs" />
     <Compile Include="Assets\__Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\__Scripts\Weapons\WeaponAttack.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -304,7 +315,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -652,104 +663,104 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Second Year/2250/Actual Project/MANDO/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Second Year/2250/Project/2250_Project/FirstGamePrototype/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{BD9EFD30-A8BF-B51C-D1CB-8C1BD50B6A10}</Project>
+      <Project>{DD43A6DD-2FF2-140C-CA5D-2E130E03F766}</Project>
       <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{6D49A626-B636-0C2B-5880-2E944ED65110}</Project>
+      <Project>{10C6A4CD-BFE2-57C9-233F-7C825A460D77}</Project>
       <Name>PackageToolsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{BFFF338A-8953-18B6-CC17-BC7B1784FD9B}</Project>
+      <Project>{2038B596-6E30-880F-A6E6-310392362AA3}</Project>
       <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
